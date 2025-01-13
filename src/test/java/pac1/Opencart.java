@@ -457,9 +457,15 @@ public class Opencart {
 
 
 
+
     //Filter Products by Category
-    //@Test(priority = 12, dependsOnMethods = {"loginTest", "searchTest"})
+    @Test(priority = 12, dependsOnMethods = {"loginTest", "searchTest"})
     public void FilterProductsbyCategoryTest() {
+
+
+
+
+
 
 
     }
@@ -467,8 +473,14 @@ public class Opencart {
 
 
 
-
     //*******
+
+
+
+
+
+
+
 
 }
 
