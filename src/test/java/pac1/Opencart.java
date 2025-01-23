@@ -42,6 +42,8 @@ public class Opencart {
     }
 
 
+
+
     @Test(priority = 1)
     public void get1() {
         driver.findElement(By.cssSelector("input[placeholder='Search']")).sendKeys("keyboard", Keys.ENTER);
@@ -72,6 +74,8 @@ public class Opencart {
 
 
 //-----------------
+
+
 
 
     //scenario:     4. Verify Registration Functionality:
@@ -461,6 +465,7 @@ public class Opencart {
     //Filter Products by Category
     @Test(priority = 12, dependsOnMethods = {"loginTest", "searchTest"})
     public void FilterProductsbyCategoryTest() {
+
 
 
 
