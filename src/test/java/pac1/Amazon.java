@@ -144,6 +144,7 @@ public class Amazon {
         System.out.println(links.size());
     }
 
+
     @BeforeClass
     public void setup() {
 
