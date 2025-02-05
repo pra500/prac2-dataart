@@ -1,21 +1,19 @@
-package pac1;
+package Dailypractice;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import java.time.Duration;
 
-public class Expedia {
+public class Sample1 {
+
 
     WebDriver driver;
 
-
-    @BeforeClass
-    public void setup() {
+    @Test
+    public void gettitle()
+    {
 
         driver = new ChromeDriver();
         driver.manage().window().maximize();
@@ -23,28 +21,13 @@ public class Expedia {
         driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(50));
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(50));
         //driver.get("https://naveenautomationlabs.com/opencart/index.php?route=account/register");
+        driver.get("https://www.bing.com");
 
 
-        driver.get("https://www.expedia.com/");
+        System.out.println(driver.getTitle());
+//driver.getTitle();
         //driver.get("https://naveenautomationlabs.com/opencart/index.php?route=account/login");
+
     }
-
-
-    @AfterClass
-    public void teardown() {
-        driver.close();
-    }
-
-
-    @Test
-    public void click(){
-        String s=
-        driver.findElement(By.xpath("//button[@aria-label='Where to?']")).getText();
-        System.out.println(s);
-    }
-
-
-
-
 
 }

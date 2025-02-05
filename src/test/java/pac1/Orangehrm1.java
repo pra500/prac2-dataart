@@ -1,15 +1,16 @@
 package pac1;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import java.time.Duration;
 
-public class AutomationPractice {
+public class Orangehrm1 {
+
 
     WebDriver driver;
 
@@ -22,7 +23,7 @@ public class AutomationPractice {
         driver.manage().deleteAllCookies();
         driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(40));
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(40));
-        driver.get("https://testautomationpractice.blogspot.com/");
+        driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
 
     }
 
@@ -34,30 +35,11 @@ public class AutomationPractice {
     }
 
 
-    //@Test
-    public void getdetails() {
-        driver.findElement(By.xpath("//input[@id='name']")).sendKeys("Tom");
-
-        driver.findElement(By.xpath("//input[@id='emal']")).sendKeys("Tom33@hotmail.com");
-
-        driver.findElement(By.xpath("//input[@id='pne']")).sendKeys(String.valueOf("9098997766"));
-
-        //input[@id='name']
-        //input[@id='name']
-
-//input[@id='email']
-        //input[@id='phone']
-
-
-    }
-
-
-
-
     @Test
-    public void getdetailss() {
-
-
+    public void verifytag() {
+boolean b=
+        driver.getPageSource().contains("input");
+        Assert.assertTrue(b);
 
     }
 
@@ -65,5 +47,3 @@ public class AutomationPractice {
 
 
 }
-
-

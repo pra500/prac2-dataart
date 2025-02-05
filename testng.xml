@@ -1,20 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="All Test Suite">
-    <test verbose="2" preserve-order="true" name="C:/Users/pgupta/IdeaProjects/Yatra/src/test/java/pac1/Amazon.java">
+    <test verbose="2" preserve-order="true" name="C:/Users/pgupta/IdeaProjects/Yatra/src/test/java/pac4">
         <classes>
-            <class name="pac1.Amazon">
+            <class name="pac4.Class1">
                 <methods>
-                    <include name="seTest"/>
-                    <include name="se1Test"/>
-                    <include name="se1iTest"/>
-                    <include name="se1fiddTest"/>
-                    <include name="s1Test"/>
-                    <include name="s2Test"/>
-                    <include name="s3Test"/>
-                    <include name="s4Test"/>
-                    <include name="s5Test"/>
-                    <include name="s6Test"/>
+                    <include name="get"/>
+                    <include name="get1"/>
+                </methods>
+            </class>
+            <class name="pac4.Class2">
+                <methods>
+                    <include name="get"/>
+                    <include name="get1"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test verbose="2" preserve-order="true" name="C:/Users/pgupta/IdeaProjects/Yatra/src/test/java/pac33">
+        <classes/>
+    </test>
+    <test verbose="2" preserve-order="true" name="C:/Users/pgupta/IdeaProjects/Yatra/src/test/java/parallelexecution">
+        <classes>
+            <class name="parallelexecution.ParallelWebDriver">
+                <methods>
+                    <include name="test1"/>
+                    <include name="test2"/>
+                </methods>
+            </class>
+            <class name="parallelexecution.ParallelWebDriver1">
+                <methods>
+                    <include name="test1"/>
+                    <include name="test2"/>
+                    <include name="test3"/>
+                </methods>
+            </class>
+            <class name="parallelexecution.ParallelWebDriver2">
+                <methods>
+                    <include name="set1"/>
+                    <include name="set2"/>
                 </methods>
             </class>
         </classes>

@@ -14,6 +14,8 @@ public class DatePickeree {
     WebDriver driver;
 
 
+
+
     @BeforeClass
     public void setup() {
 
@@ -59,7 +61,7 @@ public class DatePickeree {
 
     @Test
     public void datepickerkk11() {
-        System.out.println(driver.getPageSource().contains("iframe"));
+        //System.out.println(driver.getPageource().contains("iframe"));
 //driver.getPageSource()
 
 
@@ -78,7 +80,7 @@ public class DatePickeree {
 
     @Test
     public void datepick66() {
-        System.out.println(driver.getTitle());
+       // System.out.println(driver.getTitlse());
 //driver.getPageSource()
 
 
@@ -87,7 +89,7 @@ public class DatePickeree {
 
     @Test
     public void datepicker12() {
-        System.out.println(driver.getCurrentUrl());
+        //System.out.println(driver.getCursrentUrl());
 //driver.getPageSource()
 
 

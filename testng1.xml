@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="C:/Users/pgupta/IdeaProjects/Yatra/src/test/java/pac1/Amazon.java">
+        <classes>
+            <class name="pac1.Amazon">
+                <methods>
+                    <include name="seTest"/>
+                    <include name="se1Test"/>
+                    <include name="se1iTest"/>
+                    <include name="se1fiddTest"/>
+                    <include name="s1Test"/>
+                    <include name="s2Test"/>
+                    <include name="s3Test"/>
+                    <include name="s4Test"/>
+                    <include name="s5Test"/>
+                    <include name="s6Test"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
