@@ -8,6 +8,7 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import java.time.Duration;
+import java.util.Set;
 
 public class Expedia {
 
@@ -41,6 +42,23 @@ public class Expedia {
         String s=
         driver.findElement(By.xpath("//button[@aria-label='Where to?']")).getText();
         System.out.println(s);
+    }
+
+
+
+
+    @Test
+    public void click1() {
+
+Set<String> set1=
+        driver.getWindowHandles();
+
+
+int size=set1.size();
+        System.out.println(size);
+
+
+
     }
 
 

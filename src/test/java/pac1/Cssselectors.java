@@ -21,7 +21,7 @@ public class Cssselectors {
         driver.manage().window().maximize();
         driver.manage().deleteAllCookies();
         driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(30));
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
+        //driver.manage().timeouts().impicitlyWait(Duration.ofSeconds(30));
         //driver.get("https://naveenautomationlabs.com/opencart/index.php?route=account/register");
         driver.get("https://www.javatpoint.com/");
     }
@@ -34,22 +34,20 @@ public class Cssselectors {
 
     @Test
     public void get1() {
-
-
+String str=driver.getWindowHandle();
+        System.out.println();
     }
 
 
     @Test
     public void get2() {
+String title=
+driver.getTitle();
+        System.out.println(title);
 
 
     }
 
 
-    @Test
-    public void get3() {
-
-
-    }
 
 }

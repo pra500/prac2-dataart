@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Default Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Yatra(failed)">
+    <classes>
+      <class name="pac1.Tentestcases">
+        <methods>
+          <include name="setup"/>
+          <include name="teardown"/>
+          <include name="p4"/>
+          <include name="p5"/>
+        </methods>
+      </class> <!-- pac1.Tentestcases -->
+    </classes>
+  </test> <!-- Yatra(failed) -->
+</suite> <!-- Failed suite [Default Suite] -->

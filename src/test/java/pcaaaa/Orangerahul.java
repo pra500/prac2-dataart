@@ -10,6 +10,7 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import java.time.Duration;
+import java.util.List;
 
 public class Orangerahul {
 
@@ -24,6 +25,9 @@ public class Orangerahul {
         driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(30));
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
         driver.get("https://opensource-demo.orangehrmlive.com/");
+
+        
+
 
     }
 
@@ -101,4 +105,36 @@ public class Orangerahul {
         System.out.println("Option selected.");
 
     }
+
+
+
+    @Test()
+    public void dropdowmdeTest() {
+
+        List<WebElement> images=
+driver.findElements(By.tagName("img"));
+
+      int size=  images.size();
+
+        System.out.println(size);
+
+
+    }
+
+
+
+    @Test()
+    public void dropdowmfffdeTest() {
+
+
+
+    }
+
+
+    @Test()
+    public void dropdowmdfffeTest() {
+
+
+    }
+
 }

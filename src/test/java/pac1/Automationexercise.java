@@ -8,7 +8,6 @@ import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
-
 import java.time.Duration;
 
 public class Automationexercise {
@@ -30,13 +29,14 @@ public class Automationexercise {
     }
 
 
+
     @AfterClass
     public void teardown() {
 
         driver.quit();
     }
 
-/*
+
     @Test
     public void gettitle() {
 
@@ -67,10 +67,10 @@ public class Automationexercise {
     @Test(priority = 0)
     public void signupclick() {
 
-        driver.findElement(By.xpath("//a[normalize-space()='Signup / Login']")).click();
+        driver.findElement(By.xpath("//a[normalixze-space()='Signup / Login']")).click();
 
 
-        driver.findElement(By.cssSelector("input[placeholder='Name']")).sendKeys("johndoet@example.com");
+        driver.findElement(By.cssSelector("input[placeholdedddr='Name']")).sendKeys("johndoet@example.com");
 
 
         driver.findElement(By.cssSelector("input[data-qa='signup-email']")).sendKeys("jo@123");
@@ -98,7 +98,7 @@ public class Automationexercise {
 
     }
 
-*/
+
 
 
 

@@ -1,6 +1,5 @@
 package pac1;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterClass;
@@ -9,15 +8,14 @@ import org.testng.annotations.Test;
 
 import java.time.Duration;
 
-public class AutomationPractice {
+public class H {
 
 
     WebDriver driver;
 
-
-
     @BeforeClass
     public void setup() {
+
 
         driver = new ChromeDriver();
         driver.manage().window().maximize();
@@ -28,44 +26,48 @@ public class AutomationPractice {
 
     }
 
-
     @AfterClass
     public void teardown() {
-
-        driver.quit();
+driver.close();
     }
 
+    @Test
+    public void gettitle()
+    {
 
-    //@Test
-    public void getdetails() {
-        driver.findElement(By.xpath("//input[@id='name']")).sendKeys("Tom");
-
-        driver.findElement(By.xpath("//input[@id='emal']")).sendKeys("Tom33@hotmail.com");
-
-        driver.findElement(By.xpath("//input[@id='pne']")).sendKeys(String.valueOf("9098997766"));
-
-        //input[@id='name']
-        //input[@id='name']
-
-//input[@id='email']
-        //input[@id='phone']
-
-
+     String title=   driver.getTitle();
+        System.out.println(title);
     }
 
 
 
 
     @Test
-    public void getdetailss() {
+    public void gettitle4()
+    {
+
+        String title=   driver.getTitle();
+        System.out.println(title);
+    }
+
+    @Test
+    public void gettitle44()
+    {
+
+        String title=   driver.getTitle();
+        System.out.println(title);
+    }
 
 
+    @Test
+    public void gettitl55e()
+    {
 
+        String title=   driver.getTitle();
+        System.out.println(title);
     }
 
 
 
 
 }
-
-
